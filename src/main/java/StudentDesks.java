@@ -12,7 +12,10 @@ class StudentDesks {
         int class3 = scanner.nextInt();
 
         //Your code goes here
-        int total = class1/2 + class2/2 + class3/2;
+        class1 = class1/2 + class1%2;
+        class2 = class2/2 + class2%2;
+        class3 = class3/2 + class3%2;
+        int total = class1 + class2 + class3;
         System.out.print(total);
 
         // closing the scanner object
